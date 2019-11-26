@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/Custom-File-Upload.css">
     <link rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
     <link rel="stylesheet" href="assets/css/Login-Form-Dark.css">
     <link rel="stylesheet" href="assets/css/Profile-Edit-Form-1.css">
     <link rel="stylesheet" href="assets/css/Profile-Edit-Form.css">
@@ -20,7 +21,7 @@
     <link rel="stylesheet" href="assets/css/sidebar.css">
 </head>
 
-<body onload="setTimeout(dash, 3000);">
+<body onload = "setTimeout(dash, 3000);">
     <ul class="nav flex-column shadow d-flex sidebar mobile-hid">
         <li class="nav-item logo-holder">
             <div class="text-center text-white logo py-4 mx-4"><a class="text-white text-decoration-none" id="title" href="index.html"><strong>PhotoNet</strong></a><a class="text-white float-right" id="sidebarToggleHolder" href="#"><i class="fas fa-bars" id="sidebarToggle"></i></a></div>
@@ -35,10 +36,16 @@
         </li>
         <li class="nav-item"><a class="nav-link text-left text-white py-1 px-0" id="side-logout" href="#"><i class="fas fa-sign-out-alt mx-3"></i><i class="fa fa-caret-right d-none position-absolute"></i><span class="text-nowrap mx-2">Log out</span></a></li>
     </ul>
-    <div class="container">
-        <div>
-            <div class="row" id="img-row">
-                
+    <div class="photo-gallery">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Gallery</h2>
+                <p class="text-center">Click on an image to classify it!!</p>
+            </div>
+            <div class="row photos" id="photo-row">
+                <!--
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a data-lightbox="photos" href="assets/img/desk.jpg"><img class="img-fluid" src="assets/img/desk.jpg"></a></div>
+                -->
             </div>
         </div>
     </div>
@@ -57,13 +64,6 @@
                     </ul>
                     <p class="text-muted small mb-4 mb-lg-0">© PhotoNet 2019. All Rights Reserved.</p>
                 </div>
-                <div class="col-lg-6 my-auto h-100 text-center text-lg-right">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
-                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram fa-2x fa-fw"></i></a></li>
-                    </ul>
-                </div>
             </div>
         </div>
     </footer>
@@ -81,14 +81,16 @@
     <script src="assets/js/init-firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
     <script src="assets/js/auth.js"></script>
-        <!-- Load TensorFlow.js. This is required to use coco-ssd model. -->
-        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"> </script>
-        <!-- Load the coco-ssd model. -->
-        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"> </script>
+    <!--
+    <script src="assets/js/profile.js"></script>
+    <script src="assets/js/storage.js"></script>
+    -->
     <script src="assets/js/dashboard.js"></script>
-
-    
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <!-- Load TensorFlow.js. This is required to use MobileNet. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1"> </script>
+    <!-- Load the MobileNet model. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script>
 </body>
 
 </html>
