@@ -1,0 +1,3 @@
+remove ref line in bootstrap/css or /js min
+bootstrap.min ...  type = "module"
+remove unrequired js files
