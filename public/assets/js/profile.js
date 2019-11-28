@@ -6,6 +6,7 @@ firebase.auth().onAuthStateChanged(firebaseUser => {
         //console.log(profile.photoURL);
         photo.style.backgroundImage = "url('"+profile.photoURL+"')";
       });
+      
   }
   else {
       console.log("user not logged in");

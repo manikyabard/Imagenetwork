@@ -1,37 +1,37 @@
-[debug] [2019-11-26T15:24:29.404Z] ----------------------------------------------------------------------
-[debug] [2019-11-26T15:24:29.405Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2019-11-26T15:24:29.405Z] CLI Version:   7.6.1
-[debug] [2019-11-26T15:24:29.406Z] Platform:      darwin
-[debug] [2019-11-26T15:24:29.406Z] Node Version:  v12.12.0
-[debug] [2019-11-26T15:24:29.406Z] Time:          Tue Nov 26 2019 20:54:29 GMT+0530 (India Standard Time)
-[debug] [2019-11-26T15:24:29.406Z] ----------------------------------------------------------------------
-[debug] [2019-11-26T15:24:29.406Z] 
-[debug] [2019-11-26T15:24:29.413Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-11-26T15:24:29.414Z] > authorizing via signed-in user
-[debug] [2019-11-26T15:24:29.414Z] [iam] checking project imagenet-a7b4b for permissions ["firebase.projects.get"]
-[debug] [2019-11-26T15:24:29.415Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2019-11-26T15:24:29.415Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2019-11-27T03:37:32.946Z] ----------------------------------------------------------------------
+[debug] [2019-11-27T03:37:32.947Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-11-27T03:37:32.948Z] CLI Version:   7.6.1
+[debug] [2019-11-27T03:37:32.948Z] Platform:      darwin
+[debug] [2019-11-27T03:37:32.948Z] Node Version:  v12.12.0
+[debug] [2019-11-27T03:37:32.953Z] Time:          Wed Nov 27 2019 09:07:32 GMT+0530 (India Standard Time)
+[debug] [2019-11-27T03:37:32.953Z] ----------------------------------------------------------------------
+[debug] [2019-11-27T03:37:32.953Z] 
+[debug] [2019-11-27T03:37:32.961Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-27T03:37:32.961Z] > authorizing via signed-in user
+[debug] [2019-11-27T03:37:32.961Z] [iam] checking project imagenet-a7b4b for permissions ["firebase.projects.get"]
+[debug] [2019-11-27T03:37:32.962Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-11-27T03:37:32.962Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2019-11-26T15:24:29.801Z] <<< HTTP RESPONSE 200
-[debug] [2019-11-26T15:24:29.813Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/imagenet-a7b4b:testIamPermissions  
+[debug] [2019-11-27T03:37:34.915Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-27T03:37:34.929Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/imagenet-a7b4b:testIamPermissions  
 
-[debug] [2019-11-26T15:24:32.099Z] <<< HTTP RESPONSE 200
-[debug] [2019-11-26T15:24:32.101Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/imagenet-a7b4b  
+[debug] [2019-11-27T03:37:36.779Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-27T03:37:36.781Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/imagenet-a7b4b  
  
-[debug] [2019-11-26T15:24:34.415Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-27T03:37:37.934Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Users/manikyabardhan/Documents/imagenet'...
 [info] 
-[debug] [2019-11-26T15:24:34.420Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/imagenet-a7b4b/webApps/-/config  
+[debug] [2019-11-27T03:37:37.939Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/imagenet-a7b4b/webApps/-/config  
  
 [warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
 [info] ✔  functions: Emulator started at http://localhost:5001
-[debug] [2019-11-26T15:24:35.883Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-27T03:37:39.278Z] <<< HTTP RESPONSE 200
 [info] i  functions: Watching "/Users/manikyabardhan/Documents/imagenet/functions" for Cloud Functions...
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
-[debug] [2019-11-26T15:24:36.094Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/manikyabardhan/Documents/imagenet/functions","node_version":"12.12.0"}
-[debug] [2019-11-26T15:24:36.094Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
-[debug] [2019-11-26T15:24:36.099Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.1","resolution":"/Users/manikyabardhan/Documents/imagenet/functions/node_modules/firebase-admin/lib/index.js"}
-[debug] [2019-11-26T15:24:36.102Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/manikyabardhan/Documents/imagenet/functions/node_modules/firebase-functions/lib/index.js"}
-[debug] [2019-11-26T15:24:36.103Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/manikyabardhan/Documents/imagenet/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-27T03:37:39.609Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/manikyabardhan/Documents/imagenet/functions","node_version":"12.12.0"}
+[debug] [2019-11-27T03:37:39.609Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-11-27T03:37:39.612Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.1","resolution":"/Users/manikyabardhan/Documents/imagenet/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-11-27T03:37:39.614Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/manikyabardhan/Documents/imagenet/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-11-27T03:37:39.614Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/manikyabardhan/Documents/imagenet/functions/node_modules/firebase-functions/lib/index.js"}
